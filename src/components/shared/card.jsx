@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Card({children}) {
+function Card({children, getChild}) {
   return (
-    <button className='card'>{children}</button>
+    <button className='card' onClick={getChild} >{children}</button>
   )
 }
 
